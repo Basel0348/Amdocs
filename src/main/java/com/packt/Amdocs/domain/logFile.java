@@ -13,30 +13,31 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 
-@Entity
+//@Entity
 
 public class logFile {
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private long id;
-    private String name;
-    private Date createDate;
-	public logFile(String name) {
+    private long fileid;
+    private String file_name;
+    private Date Date_time;
+    public logFile() {}
+	public logFile(String file_name) {
 		super();
-		this.name = name;
+		this.file_name = file_name;
 		
 	}
-	public long getId() {
-		return id;
+	public long getfileid() {
+		return fileid;
 	}
-	public void setId(long id) {
-		this.id = id;
+	public void setfileid(long id) {
+		this.fileid = id;
 	}
-	public String getName() {
-		return name;
+	public String getfile_name() {
+		return file_name;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setfile_name(String name) {
+		this.file_name = name;
 	}
 	/**public Date getCreateDate() {
 		return createDate;
