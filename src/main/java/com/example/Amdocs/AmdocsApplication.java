@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+
 import com.packt.Amdocs.domain.logFile;
 import com.packt.Amdocs.domain.logFileRepository;
 
@@ -22,6 +23,7 @@ private logFileRepository repository;
 		SpringApplication.run(AmdocsApplication.class, args);
 	}
 	
+
 
 
 }
