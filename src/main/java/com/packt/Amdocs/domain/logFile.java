@@ -15,13 +15,13 @@ import javax.persistence.ManyToOne;
 
 @Entity
 
-public class LogFile {
+public class logFile {
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
     private String name;
     private Date createDate;
-	public LogFile(String name) {
+	public logFile(String name) {
 		super();
 		this.name = name;
 		

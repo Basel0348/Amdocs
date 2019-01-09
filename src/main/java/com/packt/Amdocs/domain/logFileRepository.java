@@ -2,6 +2,6 @@ package com.packt.Amdocs.domain;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface LogFileRepository extends CrudRepository<LogFile, Long> {
+public interface logFileRepository extends CrudRepository<logFile, Long> {
 
 }
